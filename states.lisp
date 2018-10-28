@@ -2,7 +2,7 @@
 
 (gamekit:register-resource-package
  :keyword
- "c:/portacle/projects/slimeit/art/")
+ (asdf:system-relative-pathname :slimeit "art/"))
 
 (define-font :fonty "12454.ttf")
 (define-font :fonty2 "12420.ttf")
@@ -57,8 +57,6 @@
     (draw-rect (vec2 0 0) 1024 768 :fill-paint (vec4 0.3 1 0 0.4))
     (draw-rect (vec2 0 0) 1024 768 :fill-paint (vec4 0 0 0 *fade-clarity*))
   ))
-             
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-
